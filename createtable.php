@@ -8,8 +8,6 @@ id INT NOT NULL IDENTITY(1,1),
 PRIMARY KEY(id),
 name VARCHAR(30),
 email VARCHAR(30),
-gender VARCHAR(10),
-age VARCHAR(2),
 country VARCHAR(10),
 birthday VARCHAR(10),
 date DATE)";
