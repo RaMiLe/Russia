@@ -34,7 +34,7 @@
 </html>
 
 <?php
-$dsn = "sqlsrv:server =  tcp:rom.database.windows.net,1433; Database = Ttt";
+$dsn = "sqlsrv:server = tcp:rom.database.windows.net,1433; Database = Ttt";
 $username = "rom";
 $password = "Rosbank1997";
 
@@ -57,10 +57,9 @@ $conn = null;
 
 <?php
 
-$dsn = "sqlsrv:server =  tcp:rom.database.windows.net,1433; Database = Ttt";
+$dsn = "sqlsrv:server = tcp:rom.database.windows.net,1433; Database = Ttt";
 $username = "rom";
 $password = "Rosbank1997";
-
 
 try {
 $conn = new PDO($dsn, $username, $password);
@@ -110,7 +109,7 @@ $conn = null;
 
 <?php
 
-$dsn = "sqlsrv:server =  tcp:rom.database.windows.net,1433; Database = Ttt";
+$dsn = "sqlsrv:server = tcp:rom.database.windows.net,1433; Database = Ttt";
 $username = "rom";
 $password = "Rosbank1997";
 
@@ -139,16 +138,14 @@ echo "<h2>Люди, которые зарегистрированы:</h2>";
 echo "<table>";
 echo "<tr><th>Name</th>";
 echo "<th>Email</th>";
-echo "<th>Gender</th>";
-echo "<th>Age</th>";
+
 echo "<th>Country</th>";
 echo "<th>Birthday</th>";
 echo "<th>Date</th></tr>";
 foreach($registrants as $registrant) {
 echo "<td>".$registrant['name']."</td>";
 echo "<td>".$registrant['email']."</td>";
-echo "<td>".$registrant['gender']."</td>";
-echo "<td>".$registrant['age']."</td>";
+
 echo "<td>".$registrant['country']."</td>";
 echo "<td>".$registrant['birthday']."</td>";
 echo "<td>".$registrant['date']."</td></tr>";
